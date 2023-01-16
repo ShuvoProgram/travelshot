@@ -1,0 +1,14 @@
+
+.checkoutBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.priceBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

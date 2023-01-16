@@ -1,0 +1,43 @@
+.details{
+    padding: 20px;
+}
+
+.review{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.bookingBox{
+    padding: 20px;
+    width: 80%;
+    border: 1px solid silver;
+}
+
+.contactBox{
+    height: fit-content;
+    width: 80%;
+    padding: 40px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.bookingBox{
+    border-radius: 10px;
+}
+
+.reviewChart{
+    width: 70%;
+    padding: 50px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.reviewBox{
+    display: flex;
+    /* align-items: center; */
+}
+
+.reviewBox svg {
+    color: orange;
+}
