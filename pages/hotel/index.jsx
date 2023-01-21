@@ -1,6 +1,7 @@
 import { Container, Grid, Spacer, Text } from '@nextui-org/react';
 import { useRouter } from 'next/router';
 import React from 'react';
+import AvailabilityCard from '../../components/card/AvailabilityCard';
 import BookingCard from '../../components/card/BookingCard';
 import HotelCard from '../../components/card/HotelCard';
 import HotelDetails from '../../components/TravelSection/HotelDetails';
@@ -13,17 +14,18 @@ const TravelDetails = () => {
     return (
         <>
             <HotelShow/>
-            <Grid.Container>
+            <Grid.Container css={{position: "relative"}}>
                 <Grid xs={8}>
                     <HotelDetails/>
                 </Grid>
-                <Grid xs={4} css={{justifyContent: "center", flexDirection: "column", alignItems: "flex-start"}}>
+                <Grid xs={4} css={{display: "flex" ,justifyContent: "flex-start", marginTop: "$20", flexDirection: 'column'}}>
                     <BookingCard/>
                     <Spacer y={3}/>
                     <InformationContact/>
                 </Grid>
             </Grid.Container>
             <Spacer y={2}/>
+              
             <Container>
             <hr />
             <Spacer y={1}/>
@@ -44,6 +46,7 @@ const TravelDetails = () => {
                 </Grid>
             </Grid.Container>
             </Container>
+            <Spacer y={2}/>
             <Spacer y={2}/>
         </>
     );

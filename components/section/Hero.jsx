@@ -1,7 +1,7 @@
 import { Text } from '@nextui-org/react';
 import React from 'react';
 import styles from '../../styles/Home.module.css';
-import Search from './Search';
+import SearchForm from './SearchForm';
 
 const Hero = () => {
     return (
@@ -24,7 +24,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-                <Search/>
+                <SearchForm/>
         </section>
     );
 };

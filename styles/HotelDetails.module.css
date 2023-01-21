@@ -41,3 +41,20 @@
 .reviewBox svg {
     color: orange;
 }
+.availabilityBox{
+    display: flex;
+    height: 220px;
+    width: 62vw;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .availabilityBox{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 500px;
+        width: 90vw;
+    }
+}

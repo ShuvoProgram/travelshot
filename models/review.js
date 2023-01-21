@@ -1,13 +1,17 @@
 const mongoose = require('mongoose');
 
-const HotelSchema = new mongoose.Schema({
-    UserId: { type: String, required: true },
-    slug: { type: String, required: true, unique: true },
-    location: { type: String, required: true },
-    desc: { type: String, required: true },
+const ReviewSchema = new mongoose.Schema({
+    name: {type: String, required: true},
+    rating: {type: Number, required: true},
+    comment: {type: String, required: true},
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: "User"
+    }
 },
     { timestamps: true }
 );
 
-mongoose.model = {};
-export default mongoose.model("Hotel", HotelSchema);
+mongoose.models = {};
+export default mongoose.model("Review", ReviewSchema);

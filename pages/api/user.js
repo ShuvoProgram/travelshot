@@ -1,24 +1,11 @@
-import connectDb from "../../lib/initDB";
-import Kitten from "../../models/test";
+import connectDB from "../../lib/connectDb"
 
-export default async function get_Users(req, res){
+const { default: User } = require("../../models/User")
 
-    try {
-        await connectDb();
-        const test = await Kitten.create(req.body);
-        res.json({test})
-    } catch (error) {
-        res.json({error})
-    }
+const handler = async (req, res) => {
+    let user = await User.find()
 
-    // connectDb().catch(err => console.error(err))
-
-    // const create = new Kitten({ name: "John Smith" });
-    // create.save().then(() => {
-    //     res.status(200).json(create)
-    // })
-
-    // res.status(200).json([
-    //     {id: 1, name: "John Smith"}
-    // ])
+    res.status(200).json({user})
 }
+
+export default connectDB(handler);

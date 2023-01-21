@@ -24,6 +24,8 @@ const Header = () => {
                 variant="highlight"
             >
             <Navbar.Link href='/'>Home</Navbar.Link>
+            <Navbar.Link href='/'>Blog</Navbar.Link>
+            <Navbar.Link href='/'>Contact</Navbar.Link>
             <Navbar.Link href='/checkout'>Checkout</Navbar.Link>
             </Navbar.Content>
             <Navbar.Content
@@ -80,10 +82,34 @@ const Header = () => {
                         color="inherit"
                         css={{
                             minWidth: "80%",
-                            minHeight: "80%"
+                            minHeight: "50%"
                         }}
                         href="/"
                     >Home</Link>
+                </Navbar.CollapseItem>
+                <Navbar.CollapseItem
+                    activeColor="warning"
+                >
+                    <Link
+                        color="inherit"
+                        css={{
+                            minWidth: "80%",
+                            minHeight: "50%"
+                        }}
+                        href="/"
+                    >Blog</Link>
+                </Navbar.CollapseItem>
+                <Navbar.CollapseItem
+                    activeColor="warning"
+                >
+                    <Link
+                        color="inherit"
+                        css={{
+                            minWidth: "80%",
+                            minHeight: "50%"
+                        }}
+                        href="/"
+                    >Contact</Link>
                 </Navbar.CollapseItem>
             </Navbar.Collapse>
         </Navbar>

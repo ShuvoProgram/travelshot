@@ -7,20 +7,19 @@ const HotelCard = () => {
     return (
         <div className={styles.hotelCard}>
             <div>
-                <Image src='https://i.ibb.co/vB6zKj0/cox-sImg.jpg' alt='#' objectFit='cover' width="100%" height={240} className={styles.hotelImg}/>
+                <Image src='https://i.ibb.co/vB6zKj0/cox-sImg.jpg' alt='#' objectFit='cover' width="100%" className={styles.hotelImg}/>
             </div>
             <div className={styles.hotelInfo}>
-                <div className={styles.hotelStar}>
+                <div className="flex text-orange-400">
                     <AiFillStar/>
                     <AiFillStar/>
                     <AiFillStar/>
                     <AiFillStar/>
                 </div>
-                <Text h2 size={25}>Eastern Discovery</Text>
+                <Text h4 size={20}>Eastern Discovery</Text>
                 <Text h4 size={15}>New York City</Text>
-                <Spacer y={1}/>
                 <hr />
-                <Spacer y={1} />
+                {/* <Spacer y={1} /> */}
                 <div className={styles.hotelReview}>
                     <Button size="xs"><span>5/5</span></Button>
                     <div>

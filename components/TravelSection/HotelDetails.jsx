@@ -1,7 +1,8 @@
-import { Button, Grid, Spacer, Text } from '@nextui-org/react';
+import { Button, Container, Grid, Spacer, Text } from '@nextui-org/react';
 import styles from '../../styles/HotelDetails.module.css'
 import React from 'react';
 import Review from './Review';
+import AvailabilityCard from '../card/AvailabilityCard';
 
 const HotelDetails = () => {
     return (
@@ -54,6 +55,13 @@ We speak your language!</p>
                     <Grid xs={4}>Spa & Sauna</Grid>
                     <Grid xs={4}>Washer & Dryer</Grid>
                  </Grid.Container>
+            </div>
+            <Spacer y={2}/>
+            <hr />
+            <Spacer y={2}/>
+            <div>
+            <Text h1 size={30}>Availability</Text>
+            <AvailabilityCard/>
             </div>
             <Spacer y={2}/>
             <hr />

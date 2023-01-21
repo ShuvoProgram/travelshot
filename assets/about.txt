@@ -1,0 +1,6 @@
+This logo was generated using the following font:
+
+- Font Title: Noto Serif Oriya
+- Font Author: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/oriya)
+- Font Source: http://fonts.gstatic.com/s/notoseriforiya/v2/MjQQmj56u-r69izk_LDqWN7w0cYByutv9qeWYrvLaxrc_Hy-v039MF1j.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

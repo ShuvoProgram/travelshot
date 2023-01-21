@@ -24,15 +24,9 @@ const EmailSubscribe = () => {
               placeholder="Email"
               color="primary"
               fullWidth
+              size="xl"
             />
-            <Input
-            type="submit"
-            width="100px"
-            css={{
-                position: "absolute",
-                right: "$8"
-            }}
-            />
+            <input type="submit" className="bg-sky-600 text-white px-8 py-2 rounded-lg absolute right-2 top-2 cursor-pointer" />
           </form>
         </div>
       </div>

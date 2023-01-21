@@ -1,4 +1,5 @@
 import { Button, Grid, Input, Spacer, Text } from '@nextui-org/react';
+import Link from 'next/link';
 import React from 'react';
 import styles from '../../styles/HotelDetails.module.css';
 
@@ -27,7 +28,7 @@ const BookingCard = () => {
                 </Grid>
             </Grid.Container>
             <Spacer y={1}/>
-            <Button css={{margin: "auto"}}>Reserve</Button>
+            <Link href="/" className='px-10 py-2 bg-blue-500 text-white mx-12 rounded-xl'>Check Availability</Link>
         </div>
     );
 };
